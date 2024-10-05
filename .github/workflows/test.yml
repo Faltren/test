@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: test
-        run: echo $test
+        run: echo $TEST
         env:
           test: ${{ vars.random_var }}
       - name: Run a one-line script
