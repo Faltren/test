@@ -14,6 +14,8 @@ jobs:
           test: ${{ vars.random_var }}
       - name: Run a one-line script
         run: echo Hello, world!
+      - name: random error
+        run: echo "::error::Random error"
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
